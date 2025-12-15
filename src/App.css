@@ -1,0 +1,72 @@
+#root {
+  width: 100%;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(
+    circle at top,
+    rgb(16 99 208 / 67%),
+    #630aa6
+  );
+  color: white;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(130deg, #840dc7, #eb2d8d);
+  background-color: antiquewhite;
+  margin: auto;
+  color: white;
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+.user-card {
+  border: none;
+  background-color: aliceblue;
+  backdrop-filter: blur(12px);
+  color: #162d3f;
+  box-shadow: 0px 20px 40px #4e38384d;
+  transition: all 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05) !important;
+}
+
+.email {
+  font-size: 14px;
+  color: #6b5c5c;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
